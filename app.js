@@ -25,8 +25,8 @@ const products = [
     badge: 'hot',
     emoji: '📵',
     description: 'Um passe mágico que desconecta você de todas as telas. Inclui abstinência garantida.',
-    image: null,
-    hasImage: false,
+    image: 'assets/detox_digital.png',
+    hasImage: true,
     colors: ['#8b5cf6', '#6d28d9', '#1e1b4b']
   },
   {
@@ -37,8 +37,8 @@ const products = [
     badge: 'eco',
     emoji: '🛡️',
     description: 'Campo de força invisível que repele qualquer anúncio, pop-up ou propaganda subliminar.',
-    image: null,
-    hasImage: false,
+    image: 'assets/escuto_anti_anuncio.png',
+    hasImage: true,
     colors: ['#06b6d4', '#0891b2', '#0e1b2e']
   },
   {
