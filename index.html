@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Antivendas — O e-commerce que te convence a não comprar. Produtos conceituais para uma vida com menos consumo e mais reflexão.">
+  <meta name="theme-color" content="#0d1117">
+  <title>Antivendas — O Anti E-commerce</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚫</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ─── NAVBAR ─── -->
+  <nav class="navbar" id="main-navbar">
+    <a href="#" class="nav-brand">
+      <div class="logo-icon">A</div>
+      <h1>antivendas</h1>
+    </a>
+
+    <div class="nav-links" id="nav-links">
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#manifesto">Manifesto</a>
+    </div>
+
+    <div class="nav-actions">
+      <div class="search-wrapper">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" placeholder="Buscar anti-produtos..." autocomplete="off">
+      </div>
+      <button class="cart-btn" id="cart-toggle" title="Abrir carrinho">
+        🛒
+        <span class="cart-count" id="cart-count">0</span>
+      </button>
+      <button class="mobile-menu-btn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="hero">
+    <div class="hero-badge">
+      <span class="pulse-dot"></span>
+      Anti-comércio consciente
+    </div>
+    <h2>
+      Compre menos.<br>
+      <span class="gradient-text">Viva mais.</span>
+    </h2>
+    <p class="hero-subtitle">
+      O primeiro e-commerce do mundo que tenta te convencer a <strong>não comprar nada</strong>. 
+      Produtos conceituais para quem já tem demais.
+    </p>
+    <div class="hero-cta">
+      <a href="#produtos" class="btn btn-primary">
+        🛍️ Ver anti-produtos
+      </a>
+      <a href="#manifesto" class="btn btn-secondary">
+        📖 Ler manifesto
+      </a>
+    </div>
+  </section>
+
+  <!-- ─── STATS ─── -->
+  <div class="stats-bar">
+    <div class="stat-item reveal">
+      <div class="stat-number" data-target="1247">0</div>
+      <div class="stat-label">compras evitadas</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-number" data-target="89">0</div>
+      <div class="stat-label">% de arrependimento evitado</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-number" data-target="6">0</div>
+      <div class="stat-label">anti-produtos</div>
+    </div>
+  </div>
+
+  <!-- ─── PRODUCTS ─── -->
+  <section class="section" id="produtos">
+    <div class="section-header reveal">
+      <h3>Anti-Produtos</h3>
+      <p>Coisas que você provavelmente não precisa. Mas se insistir...</p>
+    </div>
+
+    <div class="category-tabs reveal">
+      <button class="category-tab active" data-category="todos">Todos</button>
+      <button class="category-tab" data-category="tecnologia">💻 Tecnologia</button>
+      <button class="category-tab" data-category="bem-estar">🧘 Bem-estar</button>
+      <button class="category-tab" data-category="existencial">🌀 Existencial</button>
+      <button class="category-tab" data-category="filosófico">📚 Filosófico</button>
+    </div>
+
+    <div class="products-grid" id="products-grid">
+      <!-- Rendered by JS -->
+    </div>
+  </section>
+
+  <!-- ─── FEATURES / ABOUT ─── -->
+  <section class="section" id="sobre">
+    <div class="section-header reveal">
+      <h3>Por que anti-vender?</h3>
+      <p>Nossos diferenciais são a falta deles.</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon">🧘</div>
+        <h4>Terapia Anti-Impulso</h4>
+        <p>Cada compra passa por um "check de consciência" — respire fundo antes de confirmar qualquer pedido.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">🔒</div>
+        <h4>Zero Rastreamento</h4>
+        <p>Não coletamos seus dados. Na verdade, preferimos não saber nada sobre você.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">🌍</div>
+        <h4>Pegada Zero</h4>
+        <p>Nossos produtos não existem fisicamente, então a pegada de carbono é literalmente inexistente.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">💸</div>
+        <h4>Anti-Promoções</h4>
+        <p>Nunca fazemos promoção. Na verdade, gostaríamos de aumentar os preços para desmotivar compras.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── MANIFESTO ─── -->
+  <section class="section" id="manifesto">
+    <div class="section-header reveal">
+      <h3>O Manifesto Antivendas</h3>
+      <p>Menos consumo. Mais consciência. Nenhum cupom de desconto.</p>
+    </div>
+
+    <div class="features-grid" style="max-width: 700px; margin: 0 auto; grid-template-columns: 1fr;">
+      <div class="feature-card reveal" style="text-align: left;">
+        <p style="font-size: 1rem; line-height: 1.8; color: var(--text-secondary);">
+          <strong style="color: var(--accent-cyan);">1.</strong> Acreditamos que a melhor compra é aquela que você não faz.<br><br>
+          <strong style="color: var(--accent-cyan);">2.</strong> Cada produto aqui é um convite à reflexão, não ao consumo.<br><br>
+          <strong style="color: var(--accent-cyan);">3.</strong> Não temos newsletter, porque não queremos te incomodar.<br><br>
+          <strong style="color: var(--accent-cyan);">4.</strong> Nosso carrinho de compras vem com freio de mão embutido.<br><br>
+          <strong style="color: var(--accent-cyan);">5.</strong> Se você chegou até aqui sem comprar nada, parabéns — você venceu o capitalismo. 🎉
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="site-footer">
+    <div class="footer-brand">antivendas</div>
+    <p class="footer-tagline">O e-commerce que torce contra si mesmo desde 2026.</p>
+    <div class="footer-links">
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#manifesto">Manifesto</a>
+    </div>
+    <p class="footer-copy">© 2026 Antivendas. Nenhum direito reservado. Use como quiser.</p>
+  </footer>
+
+  <!-- ─── CART DRAWER ─── -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="cart-drawer-header">
+      <h3>🛒 Seu Carrinho</h3>
+      <button class="close-cart-btn" id="close-cart" title="Fechar">✕</button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <!-- Rendered by JS -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-totals">
+        <div class="total-row">
+          <span class="label">Subtotal</span>
+          <span class="value" id="cart-subtotal">R$ 0,00</span>
+        </div>
+        <div class="total-row">
+          <span class="label">Taxa de Remorso (5%)</span>
+          <span class="value" id="cart-tax">R$ 0,00</span>
+        </div>
+        <div class="total-row grand-total">
+          <span class="label">Total</span>
+          <span class="value" id="cart-total">R$ 0,00</span>
+        </div>
+      </div>
+      <button class="btn btn-primary checkout-btn" id="checkout-btn" disabled>
+        Finalizar Anti-Compra →
+      </button>
+    </div>
+  </aside>
+
+  <!-- ─── ANTI-MARKETING MODAL ─── -->
+  <div class="anti-modal-overlay" id="anti-overlay">
+    <div class="anti-modal">
+      <div class="modal-icon" id="anti-icon">🤔</div>
+      <h4 id="anti-title">Espera um segundo...</h4>
+      <div class="breathe-bar" id="breathe-bar" style="display:none;">
+        <div class="breathe-fill" id="breathe-fill"></div>
+      </div>
+      <p id="anti-text">Você realmente precisa disso?</p>
+      <div class="modal-actions">
+        <button class="btn btn-secondary btn-sm" id="anti-cancel">Desistir (boa escolha!)</button>
+        <button class="btn btn-primary btn-sm" id="anti-confirm">Comprar mesmo assim</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── CHECKOUT MODAL ─── -->
+  <div class="checkout-overlay" id="checkout-overlay">
+    <div class="checkout-modal">
+      <!-- Steps -->
+      <div class="checkout-steps">
+        <div class="checkout-step active">
+          <span class="step-num">1</span>
+          Dados
+        </div>
+        <div class="step-line"></div>
+        <div class="checkout-step">
+          <span class="step-num">2</span>
+          Entrega
+        </div>
+        <div class="step-line"></div>
+        <div class="checkout-step">
+          <span class="step-num">3</span>
+          Pagamento
+        </div>
+      </div>
+
+      <!-- Step 1: Personal Data -->
+      <div class="checkout-form active" id="step-1">
+        <h4 style="font-family: var(--font-display); margin-bottom: var(--space-lg);">Seus Dados</h4>
+        <div class="form-group">
+          <label for="checkout-name">Nome completo</label>
+          <input type="text" id="checkout-name" placeholder="Seu nome anti-consumista">
+        </div>
+        <div class="form-group">
+          <label for="checkout-email">E-mail</label>
+          <input type="email" id="checkout-email" placeholder="voce@exemplo.com">
+        </div>
+        <div class="form-group">
+          <label for="checkout-phone">Telefone</label>
+          <input type="tel" id="checkout-phone" placeholder="(11) 99999-9999">
+        </div>
+      </div>
+
+      <!-- Step 2: Shipping -->
+      <div class="checkout-form" id="step-2">
+        <h4 style="font-family: var(--font-display); margin-bottom: var(--space-lg);">Endereço de Entrega</h4>
+        <p style="color: var(--text-muted); font-size: 0.8rem; margin-bottom: var(--space-md);">* Nossos produtos são conceituais, mas precisamos de um endereço por formalidade.</p>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="checkout-cep">CEP</label>
+            <input type="text" id="checkout-cep" placeholder="00000-000">
+          </div>
+          <div class="form-group">
+            <label for="checkout-state">Estado</label>
+            <select id="checkout-state">
+              <option value="">Selecione</option>
+              <option>SP</option><option>RJ</option><option>MG</option><option>RS</option>
+              <option>PR</option><option>SC</option><option>BA</option><option>PE</option>
+              <option>CE</option><option>PA</option><option>Outro</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="checkout-address">Endereço</label>
+          <input type="text" id="checkout-address" placeholder="Rua, número, complemento">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="checkout-city">Cidade</label>
+            <input type="text" id="checkout-city" placeholder="Sua cidade">
+          </div>
+          <div class="form-group">
+            <label for="checkout-neighborhood">Bairro</label>
+            <input type="text" id="checkout-neighborhood" placeholder="Seu bairro">
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 3: Payment -->
+      <div class="checkout-form" id="step-3">
+        <h4 style="font-family: var(--font-display); margin-bottom: var(--space-lg);">Pagamento</h4>
+        <p style="color: var(--text-muted); font-size: 0.8rem; margin-bottom: var(--space-md);">* Nenhum valor será cobrado de verdade. É só faz-de-conta.</p>
+        <div class="form-group">
+          <label for="checkout-card">Número do Cartão</label>
+          <input type="text" id="checkout-card" placeholder="0000 0000 0000 0000">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="checkout-expiry">Validade</label>
+            <input type="text" id="checkout-expiry" placeholder="MM/AA">
+          </div>
+          <div class="form-group">
+            <label for="checkout-cvv">CVV</label>
+            <input type="text" id="checkout-cvv" placeholder="000">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="checkout-cardholder">Nome no Cartão</label>
+          <input type="text" id="checkout-cardholder" placeholder="Como está no cartão">
+        </div>
+      </div>
+
+      <!-- Success -->
+      <div class="checkout-form checkout-success" id="checkout-success">
+        <div class="success-icon">🎉</div>
+        <h4>Anti-Compra Realizada!</h4>
+        <p>Seu pedido fictício foi processado com sucesso.<br>Nada será entregue, e isso é o melhor.</p>
+        <div style="margin-bottom: var(--space-lg);">
+          <span class="order-id" id="order-id">AV-XXXXX</span>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div class="checkout-nav">
+        <button class="btn btn-secondary btn-sm" id="checkout-back" style="visibility: hidden;">← Voltar</button>
+        <button class="btn btn-primary btn-sm" id="checkout-next">Continuar →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── TOAST CONTAINER ─── -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
