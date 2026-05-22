@@ -49,8 +49,8 @@ const products = [
     badge: 'hot',
     emoji: '⏳',
     description: 'Cada hora dura o equivalente a três. Perfeito para quem quer viver mais sem pressa.',
-    image: null,
-    hasImage: false,
+    image: 'assets/expansor_tempo.png',
+    hasImage: true,
     colors: ['#f59e0b', '#d97706', '#1a1208']
   },
   {
